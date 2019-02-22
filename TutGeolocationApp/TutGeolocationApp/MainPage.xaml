@@ -4,11 +4,13 @@
              xmlns:local="clr-namespace:TutGeolocationApp"
              x:Class="TutGeolocationApp.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+        <Button Text="Get Current Location" x:Name="buttonGetCurrentLoc" Clicked="ButtonGetCurrentLoc_Clicked" />
+        <Label Text="Long/Lat" x:Name="labelLongLat" />
+        <Button Text="Convert to address" x:Name="buttonConvert" Clicked="ButtonConvert_Clicked" />
+        <Label Text="Address: " x:Name="labelAddress" />
+        <Button Text="Compare to San Francisco" x:Name="buttonCompareDistance" Clicked="ButtonCompareDistance_Clicked" />
+        <Label Text="Distance" x:Name="labelDistance" />
     </StackLayout>
 
 </ContentPage>
